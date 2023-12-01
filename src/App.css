@@ -1,0 +1,100 @@
+div {
+  display: grid;
+  gap: 2%;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+  
+  transition: 300ms;
+  width: 80%;
+   
+}
+
+aside:hover {
+  background-color: aquamarine;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #000;
+  width: 130%;
+}
+
+section:hover>article {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  grid-area: header;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #000;
+  background-color: aqua;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+
+}
+
+div>section {
+  grid-area: main;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #000;
+  
+}
+
+
+
+section:has(article:hover){
+  background-color: aquamarine;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #000;
+  width: 130%;
+}
+
+aside>section {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  grid-area: footer;
+  background-color: darkturquoise;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #000;
+
+}
+
+
